@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="sv">
+<head>
+    <title>Cineasterna - Sök</title>
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>Cineasterna</h1>
+</header>
+
+<nav>
+    <ul class="nav-li">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="search.html" class="current">Sök</a></li>
+        <li><a href="film.html">Filmer</a></li>
+        <li><a href="contact.html">Om oss</a></li>
+    </ul>
+</nav>
+
+<div class="headlines">
+    <a href="img/logo.jpg" target="_blank"><img src="img/logo.jpg" class="logo" alt="Bild på logotyp" width="40" height="40"></a>
+    <h1>Cineasternas filmklubb</h1>
+</div>
+
+<main class="search-container section">
+
+    <section class="main-search">
+        <h2>Sök i CMDb:</h2>
+        <input type="text" id="searchbox" name="searchbox">   
+            
+        <div class="filter">
+            <h3>Filtrera sökningen:</h3>
+
+            <div class="checkbox">
+
+                <div class="genre">
+                    <p>Genre:</p>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxHorror">
+                        <label for="checkboxHorror">Skräck</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxComedy">
+                        <label for="checkboxComedy">Komedi</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxFantasy">
+                        <label for="checkboxFantasy">Fantasy</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxAction">
+                        <label for="checkboxAction">Action</label>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <p>CMDb Score:</p>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxLow">
+                        <label for="checkboxShort">0-1</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxMediumLow">
+                        <label for="checkboxMedium">1-2</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxMediumHight">
+                        <label for="checkboxLong">2-3</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxHigh">
+                        <label for="checkboxLong">3-4</label>
+                    </div>
+                </div>
+
+                <div class="lenght">
+                    <p>Filmlängd:</p>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxShort">
+                        <label for="checkboxShort">0-59 minuter</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxMedium">
+                        <label for="checkboxMedium">60-119 minuter</label>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="checkboxLong">
+                        <label for="checkboxLong">119+ minuter</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>   
+
+    </section>
+
+    <div class="result">
+        <h2>Sökresultat</h2>
+        <i>Resultat för sökningen "gudfa".</i>
+
+        <div class="result-films">
+
+            <article class="film res section">
+
+                <div class="content">
+                <img src="img/gudfadern.jpg" alt="Omslagsbild Gudfadern" class="click-img image">
+                    <div class="film-text">
+                        <h2>Gudfadern</h2>
+                        <p>Don Vito Corleone, chef för en maffiafamilj, bestämmer sig för att överlämna sitt imperium till sin yngste son Michael. Men hans beslut försätter oavsiktligt hans nära och käras liv i allvarlig fara... 
+                        <a href="#" class="read-more">Läs mer.</a></p>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="film res section">
+                
+                <div class="content">
+                <img src="img/gudfadernII.jpg" alt="Omslagsbild Gudfadern del II" class="click-img image">
+                    <div class="film-text">
+                        <h2>Gudfadern del II</h2>
+                        <p>Vito Corleones tidiga liv och karriär i 1920-talets New York City skildras, medan hans son, Michael, vidgar och skärper sitt grepp om familjebrottssyndikatet... 
+                        <a href="#" class="read-more">Läs mer.</a></p>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="logo-image">
+        <img src="img/logo.jpg" alt="Bild på logotyp" width="150" height="150">
+    </div>
+    <div class="footer">
+        <p>KONTAKTA OSS</p>
+    <ul>
+        <li><a href="contact.html">Kontakta oss</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
+    </div>
+</footer>
+
+</body>
